@@ -11,18 +11,6 @@ for distributed motion control systems with encoder feedback.
 - **Current loop** — FOC-ready, Clarke/Park transforms
 - **Multi-axis orchestration** — coordinated motion profiles
 
-## Architecture
-
-┌──────────────────────────────────────┐
-│ Multi-axis orchestrator │
-├────────┬────────┬────────┬────────────┤
-│ Axis 1 │ Axis 2 │ Axis 3 │ Axis N │
-├────────┴────────┴────────┴────────────┤
-│ PID | Ramp | Encoder │
-├───────────────────────────────────────┤
-│ Hardware abstraction layer │
-└───────────────────────────────────────┘
-
 Platforms
 
     STM32F4 / F7 / H7 (HAL, TIM encoder mode)
